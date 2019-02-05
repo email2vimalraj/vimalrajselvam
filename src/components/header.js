@@ -20,6 +20,10 @@ const Title = styled.a`
   padding: 5px;
   margin-top: 0;
 
+  a {
+    text-decoration: none;
+  }
+
   @media only screen and (min-width: 46.875em) {
     font-size: 21px;
   }
@@ -67,7 +71,9 @@ const Icons = styled.div`
 
 const Header = ({ siteTitle }) => (
   <HeaderStyle>
-    <Title>{siteTitle}</Title>
+    <Title>
+      <a href="/">{siteTitle}</a>
+    </Title>
     <NavLinks>
       <NavListItem>
         <NavLink href="/about">About me</NavLink>

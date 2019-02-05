@@ -8,10 +8,6 @@ const MainCards = styled.div`
   column-count: 1;
   column-gap: 10px;
   margin: 10px;
-
-  @media only screen and (min-width: 65.625em) {
-    column-count: 2;
-  }
 `
 
 const Card = styled.div`
@@ -26,7 +22,33 @@ const Card = styled.div`
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+    <SEO
+      title="Home"
+      keywords={[
+        `home`,
+        `index`,
+        `vimalraj`,
+        `vimalrajselvam`,
+        `vimal`,
+        `selvam`,
+        `testng`,
+        `cucumber`,
+        `testing`,
+        `automation`,
+        `testautomation`,
+        `reporting`,
+        `framework`,
+        `execution`,
+        `appium`,
+        `react`,
+        `mobile`,
+        `gatsby`,
+        `reactnative`,
+        `apple`,
+        `ios`,
+        `parallel`
+      ]}
+    />
     <MainCards>
       <Card>
         <h1>Howdy! I'm Vimalraj</h1>
@@ -74,11 +96,6 @@ const IndexPage = () => (
           know what they say… “The best motivation comes from a few kind words
           of encouragement”!
         </p>
-      </Card>
-      <Card>
-        <h2>Recent Posts</h2>
-        <p>Post number one</p>
-        <p>Post number one</p>
       </Card>
     </MainCards>
   </Layout>
